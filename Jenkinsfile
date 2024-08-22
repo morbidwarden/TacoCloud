@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Back-end') {
       agent {
-        docker { image 'maven:3.8.6-adoptopenjdk-17' }
+        docker { image 'savevskii/maven:latest' }
       }
       steps {
         sh 'mvn clean install'
